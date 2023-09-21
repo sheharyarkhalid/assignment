@@ -272,7 +272,7 @@ ul {
   height: 100%;
 }
 
-.home_page_banner_figcaption h4 {
+.home_page_banner_figcaption .heading {
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -281,14 +281,14 @@ ul {
   margin: 0px;
 }
 
-.home_page_banner_figcaption h4 .reverse_color {
+.home_page_banner_figcaption .heading .reverse_color {
   color: #5380ea;
   font-weight: 700;
   position: relative;
   display: inline;
 }
 
-.home_page_banner_figcaption h4 .reverse_color > img {
+.home_page_banner_figcaption .heading .reverse_color > img {
   position: absolute;
   bottom: -7px;
   left: -3px;
@@ -351,7 +351,7 @@ margin: 0px;
 }
 
 @media (max-width: 768px) {
-  .home_page_banner_figcaption h4 {
+  .home_page_banner_figcaption .heading {
     font-size: 36px;
     padding-bottom: 40px;
   }
