@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>I2C Assignment | Home</title>
    <meta name="description" content="front end developer assignment">
    <meta name="keywords" content="HTML, CSS, JavaScript">
    <meta name="author" content="sheharyar">
   
-   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="css/style.css">
 
   <!-- fontawsome link start-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
   <!-- fontawsome link end -->
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -36,12 +36,12 @@
   <!-- script -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <script type=text/javascript src="js/custom_script.js"></script>
+  <script src="js/custom_script.js"></script>
 
-  <script type=text/javascript src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 
-  <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css" />
-  <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css" />
+  <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+  <link rel=stylesheet type=text/css href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css">
 
 </head>
 
@@ -57,11 +57,11 @@
           <div class="header_links">
             <div class="cross_btn"><i class="res_toggle_button fa-sharp fa-light fa-xmark"></i></div>
             <div class="header_links_list">
-              <a>About us</a>
-              <a>Products</a>
-              <a>Careers</a>
+              <a href="#about-us">About us</a>
+              <a href="#products">Products</a>
+              <a href="#contact">Careers</a>
             </div>
-            <a class="header_button">Contact us</a>
+            <a class="header_button" href="#contact">Contact us</a>
           </div>
           <div class="res_toggle_button">
             <i class="fa-light fa-bars"></i>
@@ -72,7 +72,7 @@
   </header>
 
 
-  <section class="banner_section">
+  <section class="banner_section" id="about-us">
     <div class="banner_asset_5"><img src="images/banner_asset_5.png" alt="banner_asset_5"></div>
     <div class="custom_container">
 
@@ -155,7 +155,7 @@
   </div>
 
 
-  <section class="product_brand_section">
+  <section class="product_brand_section" id="products">
     <div class="custom_container">
       <div class="product_brand_heading">
         <div class="brand_asset_1"><img src="images/brand_asset_1.png" alt="brand asset1"></div>
@@ -212,7 +212,7 @@
   </section>
 
 
-  <section class="contact_section">
+  <section class="contact_section" id="contact">
     <div class="custom_container">
       <div class="contact_section_parent">
 
@@ -227,15 +227,15 @@
             <div class="contact_page_form_content">
               <div class="contact_us_form_fields">
                 <span>Name <i>*</i></span>
-                <input type="text" placeholder="Enter your full name" required="" name="name" value="" />
+                <input type="text" placeholder="Enter your full name" required="" name="name" value="" >
               </div>
               <div class="contact_us_form_fields">
                 <span>Company</span>
-                <input type="text" placeholder="Enter your company name" required="" name="company" value="" />
+                <input type="text" placeholder="Enter your company name" required="" name="company" value="">
               </div>
               <div class="contact_us_form_fields">
                 <span>Email address <i>*</i></span>
-                <input type="email" placeholder="Enter your email address" required="" name="email" value="" />
+                <input type="email" placeholder="Enter your email address" required="" name="email" value="">
               </div>
 
               <div class="contact_us_form_submit_btn">
@@ -262,16 +262,16 @@
 
           <div class="footer_links">
             <div class="footer_links_list">
-              <a>About us</a>
-              <a>Products</a>
-              <a>Careers</a>
+              <a href="#about-us">About us</a>
+              <a href="#products">Products</a>
+              <a href="#contact">Careers</a>
             </div>
-            <a class="footer_button">Contact us</a>
+            <a class="footer_button" href="#contact">Contact us</a>
           </div>
         </div>
       </div>
     </div>
-    </header>
+  </footer>
 
 
 </body>
