@@ -281,13 +281,14 @@ ul {
   margin: 0px;
 }
 
-.home_page_banner_figcaption h4 small {
+.home_page_banner_figcaption h4 .reverse_color {
   color: #5380ea;
   font-weight: 700;
   position: relative;
+  display: inline;
 }
 
-.home_page_banner_figcaption h4 small > img {
+.home_page_banner_figcaption h4 .reverse_color > img {
   position: absolute;
   bottom: -7px;
   left: -3px;
@@ -312,25 +313,25 @@ ul {
 }
 
 .single_banner_content_box > figure {
-  width: 64px;
-  height: 64px;
-  min-width: 64px;
+  display: flex;
+margin: 0px;
 }
 
 .single_banner_content_box > figure img {
-  width: 100%;
-  height: 100%;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
   object-fit: cover;
 }
 
-.single_banner_content_box figcaption {
+.single_banner_content_box > figure figcaption {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-left: 24px;
 }
 
-.single_banner_content_box figcaption h5 {
+.single_banner_content_box > figure figcaption h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -340,7 +341,7 @@ ul {
   margin: 0px;
 }
 
-.single_banner_content_box figcaption p {
+.single_banner_content_box > figure figcaption p {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -360,7 +361,12 @@ ul {
   .single_banner_content_box {
     flex-direction: column;
   }
-  .single_banner_content_box figcaption {
+  .single_banner_content_box > figure {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .single_banner_content_box > figure figcaption {
     padding-left: 0px;
     padding-top: 10px;
   }
@@ -369,7 +375,7 @@ ul {
     grid-template-areas: ".";
   }
 
-  .home_page_banner_box figure {
+  .home_page_banner_box > figure {
     max-width: 540px;
     margin: 0 auto;
   }
@@ -453,13 +459,14 @@ ul {
 
 .home_section_one_single_list figure {
   margin: 0px;
+  display: flex;
 }
 
 .home_section_one_single_list figure img {
   margin-right: 24px;
 }
 
-.home_section_one_single_list figcaption h3 {
+.home_section_one_single_list figure figcaption h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -469,7 +476,7 @@ ul {
   margin: 0px;
 }
 
-.home_section_one_single_list figcaption p {
+.home_section_one_single_list figure figcaption p {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -483,7 +490,11 @@ ul {
     margin-right: 0px;
     margin-bottom: 10px;
   }
-
+  .home_section_one_single_list figure {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .home_section_one_single_list {
     padding: 10px 10px;
     flex-direction: column;
